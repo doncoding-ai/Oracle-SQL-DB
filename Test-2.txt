@@ -1,0 +1,78 @@
+1. write a query to dispaly maximum employee count department name over other departments .
+
+2. Write query to display empno, ename,sal,dname for given employee number.
+3. Write query to display empno, ename,sal,grade for those emplyees with 2nd  higest salary grade (note: grade is in salgrade table)
+4. Write query to display employee and their boss details those who are having salary more than their boss(manager).
+5. Write a query to diaplay every emplyee those belongs to any department & also those all not belongs to any department (hint:all depts from emp atable and dept table)
+6.wrirte a query to dispaly empno, ename,sal,grade and (grade name  if grade is 5 then 'highest paid guys' ,if grade is 1 then 'lowest paid guys' and other grade guys as 'medium paid guys).
+7. scenario: there are 2 tables data give n in below as table1  and table2, both tables have only one column. Question to disple the number of rows if you do inner join, left join, right join and full join and cross join.
+
+Table1:          Table2:
+COL1             COL2
+1                1
+1                1
+1                null
+2                4
+null             2
+3                5 
+3
+
+8. display emplee name in uper case, lower case, lenght of each emplyee name, first&  charecter of employee name in one column.
+9. display employee name who most  experienced among all emplyees and least experienced employee among all.
+10 display current month first day and next month first sunday date. use dual table.
+11. display department wise average salary whose department avarage salary more than department 20.(sub query)
+12.dispaly employee details and dept details where no emplyees working (hint check in both emp and dep tables)
+13.display 5th record,7th record and 10th record from employee table (rownum)
+14. display 1st and last records fro emp table.
+15. display 2nd last record (2nd row from last) from emp table.
+16. display 2nd, 5th and 9th maximum salary from emp table.
+17.display 2nd to 4th minimum salary employee details.
+18.scenario: 
+qiestion1:display only duplicate records from below table 
+qiestion2: write A query to display non first occurence duplate records
+qiestion3:write one more queries to delete duplate records
+ 
+table:Location
+LOC_NO,LOC_NM
+1,NY
+1,TX
+2,FL
+3,NJ
+4,DL
+2,MG
+5,CF
+3,MP
+2,MG
+
+19. display the empno, ename,salary from the previous row to calculate the difference between the salary of the current row and that of the previous row.
+20. display the deptno, ename,salary from the previous row to calculate the difference between the salary of the current row and that of the previous row from each department separately.
+21. display the empno, ename,salary from the next row to calculate the difference between the salary of the current row and that of the previous row.
+22. display the deptno, ename,salary from the next row to calculate the difference between the salary of the current row and that of the previous row from each department separately.
+23. write a query to create view usning sum(sal), avg(sal), min(comm), max(comm) from employee table
+24. dispaly all dept numbers from emp table and dept table (sHOULD NOT MISS ANY DEPT exist in either of tables)
+25.write a query to display deptno from dept table which is not present in emp table without join and subquery.
+26. look into below table data then write a query to get o/p given below.
+
+Table: Marks
+
+sname, subject, marks
+s1,science,50
+s2,english,70
+s3,compusterscience, 90
+s1,english,30
+s2,science,70
+s3,science,100
+s1,compusterscience,36
+s2,compusterscience,60
+s3, english, 40
+
+o/p:
+
+name,english,science, computerscience
+s1,30,50,36
+s2,70,70,60
+s3,40,70,90
+
+
+
+

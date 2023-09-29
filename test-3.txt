@@ -1,0 +1,87 @@
+1.Find missing quarter for each store like for store S1-- Q3 is missing ,for store S2 --Q2 is missing and for store S3--Q4 is missing
+
+I/P
+Store Quarter Amount
+S1 Q1 200
+S1 Q2 300
+S1 Q4 400
+S2 Q1 500
+S2 Q3 600
+S2 Q4 700
+S3 Q1 800
+S3 Q2 750
+S3 Q3 900
+
+O/P
+store q_no
+S1 Q3 
+S2 Q2 
+S3 Q4 
+=============================
+create table store (store_name varchar (100), quarter char(2), amount number);
+
+Insert into store values('S1', 'Q1', 200);
+Insert into store values('S1', 'Q2', 300);
+Insert into store values('S1', 'Q4', 400);
+Insert into store values('S2', 'Q1', 500);
+Insert into store values('S2', 'Q3', 600);
+Insert into store values('S2', 'Q4', 700);
+Insert into store values('S3', 'Q1', 800);
+Insert into store values('S3', 'Q2', 750);
+Insert into store values('S3', 'Q3', 900);
+
+select * from store;
+================================================================
+2.Find 3 or more consecutive empty seats like 4th,5th and 6th rows have sequence of three rows empty and 8th,9th,10th &11th rows have sequence of three rows empty
+using below data.
+
+solve this problem
+
+create table hall (seat_no int ,is_empty varchar(10));
+insert into hall values(1,'N');
+insert into hall values(2,'Y');
+insert into hall values(3,'N');
+insert into hall values(4,'Y');
+insert into hall values(5,'Y');
+insert into hall values(6,'Y');
+insert into hall values(7,'N');
+insert into hall values(8,'Y');
+insert into hall values(9,'Y');
+insert into hall values(10,'Y');
+insert into hall values(11,'Y');
+insert into hall values(12,'N');
+insert into hall values(13,'Y');
+insert into hall values(14,'Y');
+
+=======================================================
+3. Derive Points table for FIFA tournament
+
+create table fifa_world_cup
+(
+Team_1 Varchar(20),
+Team_2 Varchar(20),
+Winner Varchar(20)
+);
+INSERT INTO fifa_world_cup values('Kenya','Esp','Kenya');
+INSERT INTO fifa_world_cup values('Esp','Aus','Aus');
+INSERT INTO fifa_world_cup values('SA','Eng','Eng');
+INSERT INTO fifa_world_cup values('Eng','NZ','NZ');
+INSERT INTO fifa_world_cup values('Aus','Kenya','Kenya');
+
+select * from fifa_world_cup;
+
+Need output as below summary:
+team_name	matches_played	no_of_matches_won	no_of_matches_lost
+Kenya	          2	         2	                  0
+Eng	          2	         1	                  1
+Aus	          2	         1	                  1
+NZ	          1	         1	                  0
+Esp	          2	         0	                  2
+SA	          1	         0	                  1
+===================================================================
+
+
+
+
+
+
